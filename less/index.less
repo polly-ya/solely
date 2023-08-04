@@ -1,0 +1,289 @@
+@import './base.less';
+
+@rootSize: 3.75vw;
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* 头部 导航*/
+
+header {
+    height: (196/@rootSize);
+    background: url(../images/banner.png) no-repeat;
+    background-size: cover;
+
+    .icon-fenlei,
+    .icon-xiaoxi {
+        color: white;
+        font-size: (17/@rootSize);
+    }
+
+    .search {
+        margin: 0 auto;
+        width: (289/@rootSize);
+        height: (30/@rootSize);
+        position: relative;
+        top: (9/@rootSize);
+        left: 0;
+
+        input {
+            border-radius: (30/@rootSize);
+            width: (289/@rootSize);
+            height: (30/@rootSize);
+            background-color: rgba(255, 255, 255, 0.6);
+            border: none;
+            line-height: (30/@rootSize);
+            padding-left: (36/@rootSize);
+            color: white;
+            position: absolute;
+
+        }
+        .icon-search {
+            font-size: (15/@rootSize);
+            margin-left: (18/@rootSize);
+            line-height: (30/@rootSize);
+        }
+    }
+}
+
+/* 头部导航 */
+.head-nav {
+    background-color: white;
+    height: (100/@rootSize);
+
+    ul {
+        height: (100/@rootSize);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+
+        li {
+            img {
+                height: (52/@rootSize);
+            }
+
+            a {
+                font-size: (12/@rootSize);
+                color: #333333;
+
+            }
+        }
+
+    }
+}
+
+/* 主体区域 */
+.main { 
+    padding-bottom: (50/@rootSize);
+    .class {
+        padding: (9/@rootSize);
+        background-color: #fff;
+       
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+
+            li {
+                padding-top: (13/@rootSize);
+                padding-bottom: (2/@rootSize);
+
+                width: (84/@rootSize);
+                height: (109/@rootSize);
+                background-color: #e1e8f8;
+                text-align: center;
+                /* 给父级盒子开启BFC模式 */
+                overflow: hidden;
+
+                h5 {
+                    font-size: (12/@rootSize);
+                    color: #333;
+                    // margin: (13/@rootSize) (30/@rootSize) 0 (30/@rootSize);
+                }
+
+                p {
+                    font-size: (12/@rootSize);
+                    transform: scale(0.75);
+                    color: #6784c8;
+                    margin-top: (7/@rootSize);
+                    white-space: nowrap;
+                }
+
+                img {
+                    width: (70/@rootSize);
+                    height: (33/@rootSize);
+                    margin: (10/@rootSize) (8/@rootSize) (9/@rootSize) (6/@rootSize);
+                }
+
+                &:nth-child(2) {
+                    background-color: #e0f3fb;
+                }
+
+                &:nth-child(3) {
+                    background-color: #fcf7ee;
+                }
+
+                &:nth-child(4) {
+                    background-color: #e2dff6;
+                }
+
+                &:nth-child(2) p {
+                    color: #60a4c1;
+                }
+
+                &:nth-child(3) p {
+                    color: #dbbd88;
+                }
+
+                &:nth-child(4) p {
+                    color: #8f86ca;
+                }
+
+                /*  &:nth-child(1){
+                    width: (70/@rootSize);
+                    height: (33/@rootSize);
+                } */
+                &:nth-child(2) img {
+                    width: (45/@rootSize);
+                    height: (41/@rootSize);
+                    margin: (10/@rootSize) (20/@rootSize) (5/@rootSize) (17/@rootSize);
+                }
+
+                &:nth-child(3) img {
+                    height: (53/@rootSize);
+                    width: (41/@rootSize);
+                    margin: (1/@rootSize) (20/@rootSize) (5/@rootSize) (20/@rootSize);
+                }
+
+                &:nth-child(4) img {
+                    height: (53/@rootSize);
+                    width: (63/@rootSize);
+                    margin: (3/@rootSize) (20/@rootSize) (5/@rootSize) (17/@rootSize);
+                }
+            }
+
+
+        }
+
+    }
+
+    .hot {
+        background-color: #fff;
+        padding: (12/@rootSize);
+        margin-top: (10/@rootSize);
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: (140/@rootSize);
+
+            h5 {
+                font-size: (16/@rootSize);
+                color: #383838;
+                font-weight: normal;
+
+                .icon-roundright {
+                    font-size: (14/@rootSize);
+                    color: #565656;
+                    margin-left: (5/@rootSize);
+                }
+            }
+
+            .page {
+                width: (32/@rootSize);
+                height: (15/@rootSize);
+                border-radius: 1px;
+                border: solid 1px #b4a078;
+                font-size: (12/@rootSize);
+                color: #b4a078;
+                text-align: center;
+                line-height: (15/@rootSize);
+            }
+        }
+
+        .body {
+            display: flex;
+            justify-content: space-between;
+            margin-top: (12/@rootSize);
+
+            .content {
+                width: (170/@rootSize);
+                height: (260/@rootSize);
+                border: solid 1px #ebebeb;
+
+                .pic {
+                    width: (170/@rootSize);
+                    height: (170/@rootSize);
+                    background-color: #f7f7f7;
+                    padding-left: (15/@rootSize);
+                    padding-top: (12/@rootSize);
+
+                    img {
+                        height: (150/@rootSize);
+                    }
+                }
+
+                p {
+                    font-size: (14/@rootSize);
+                    color: #333;
+                    margin-top: (12/@rootSize);
+                    margin-left: (13/@rootSize);
+                }
+
+                .price {
+                    font-size: (16/@rootSize);
+                    color: #fc5051;
+                    margin-top: (20/@rootSize);
+                    margin-left: (10/@rootSize);
+
+                    span {
+                        font-size: (12/@rootSize);
+                    }
+                }
+            }
+
+            /* &:nth-child(2) .pic{
+                padding-left: (27/@rootSize);
+            } */
+
+        }
+
+    }
+}
+
+/* 底部 */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: (50/@rootSize);
+    text-align: center;
+    background-color: #fff;
+    box-shadow: inset 0px 1px 1px 0px #e4e4e4;
+  
+    a {
+      color: #999;
+  
+      .iconfont {
+        font-size: (21/@rootSize);
+      }
+  
+      p {
+        font-size: (12/@rootSize);
+  
+  
+      }
+  
+      &:first-child {
+        color: #fc5051;
+      }
+    }
+  }
