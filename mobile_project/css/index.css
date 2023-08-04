@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+body {
+  background-color: #f5f8fa;
+}
+/* 头部区域 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 16vw;
+  width: 100%;
+  box-shadow: 0 0.08vw 0.13333333vw 0 rgba(0, 0, 0, 0.08);
+  padding: 4vw;
+  z-index: 999;
+}
+header .left {
+  display: flex;
+}
+header .left .logo {
+  width: 9.6vw;
+  height: 9.6vw;
+  background-color: #ff2741;
+  border-radius: 2.13333333vw;
+}
+header .left .logo img {
+  width: 100%;
+}
+header .left .txt {
+  margin-left: 2.66666667vw;
+}
+header .left .txt h5 {
+  font-size: 3.73333333vw;
+  color: #333;
+  font-weight: normal;
+}
+header .left .txt p {
+  font-size: 3.2vw;
+  color: #999;
+}
+header .right {
+  margin-top: 1.33333333vw;
+}
+header .right a {
+  display: block;
+  width: 20vw;
+  height: 6.93333333vw;
+  border: 0.26666667vw solid #ff2741;
+  font-size: 3.73333333vw;
+  color: #ff2741;
+  font-weight: bold;
+  line-height: 6.93333333vw;
+  text-align: center;
+  border-radius: 3.46666667vw;
+}
+/* banner区域 */
+.xhs-video {
+  padding-top: 16vw;
+}
+.xhs-video video {
+  width: 100%;
+  height: 58.66666667vw;
+}
+/* 热门笔记 */
+.note {
+  background-color: #fff;
+  margin-top: 2.66666667vw;
+}
+.note .title {
+  font-size: 4.53333333vw;
+  color: #333;
+  margin: 0 4vw 4vw 4vw;
+  padding-top: 4vw;
+}
+.note .xhs-list {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.note .item {
+  margin: 1.33333333vw 0;
+  width: 46.13333333vw;
+  box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.04);
+}
+.note .item .pic {
+  height: 61.33333333vw;
+  width: 46.13333333vw;
+}
+.note .item .pic img {
+  border-radius: 1.33333333vw 1.33333333vw 0 0;
+}
+.note .item .wz {
+  margin-top: 2.66666667vw;
+}
+.note .item .wz h5 {
+  font-weight: normal;
+  font-size: 3.46666667vw;
+}
+.note .item .wz .xhs-zz {
+  margin: 2.66666667vw 0;
+  display: flex;
+  height: 6.66666667vw;
+  line-height: 6.66666667vw;
+}
+.note .item .wz .xhs-zz img {
+  width: 6.66666667vw;
+  height: 6.66666667vw;
+  border-radius: 80vw;
+}
+.note .item .wz .xhs-zz p {
+  font-size: 3.2vw;
+  margin-left: 1.6vw;
+  /* 第一步：让文字强制一行显示 */
+  white-space: nowrap;
+  /* 第二步：溢出隐藏 */
+  overflow: hidden;
+  /* 第三步：溢出的内容省略号显示 */
+  text-overflow: ellipsis;
+}
+/*App  */
+.download {
+  position: fixed;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  bottom: 18.66666667vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35.2vw;
+  height: 10.66666667vw;
+  background-color: #ff2741;
+  border-radius: 5.33333333vw;
+  padding: 0 2.66666667vw;
+}
+.download .logo1 {
+  width: 12vw;
+  height: 5.33333333vw;
+  background-color: #fff;
+  border-radius: 2.66666667vw;
+  text-align: center;
+  line-height: 5.33333333vw;
+}
+.download .logo1 img {
+  height: 3.46666667vw;
+  width: 9.33333333vw;
+}
+.download span {
+  white-space: nowrap;
+  font-size: 3.2vw;
+  color: #fff;
+}
